@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./home.css">
+</head>
+<body>
+<nav class="navbarContrainer">
+        <div class="logo"> <img src="https://tse3.mm.bing.net/th/id/OIP.uAIdUiVeZPwOLI6wros9kwHaH0?pid=Api&P=0&h=180" alt="Electronics_logo">
+            
+            Electronics 
+        </div>
+        <div class="manu-items">
+            <a href="./Homepage.html">Home</a>
+            <div class="dropdown">
+               <div class="dropdown-content">
+                <a onclick="searchCategory('mobile')">Mobile</a>
+                <a onclick="searchCategory('laptop')">Laptop</a>
+                <a onclick="searchCategory('watch')">Watches</a>
+               </div>
+           </div>
+        <a href="About">About</a>
+        </div>
+        <div class="searchbox">
+            <input type="search" id="search" placeholder="search a product ........." onkeyup="searchFilter()">
+        </div>
+         <div class="nav-rigth">
+        <img src="" alt="Profile" id="ProfileImage">
+        <a href="./wishlist.html">Wishlist❤️</a>
+        <a href="./cart.html">cart🛒</a>
+    </div>
+    </nav>
+    <section id="productList">
+
+
+      </section>
+    <section class="cartSummary">
+    
+    <button onclick="clearwishlist()">Clear Wishlist❤️</button>
+</section>
+   <footer class="footer">
+        <p>&copy; 2026 Electronics. All rights reserved.</p>
+        <p>Contact us: info@electronics.com</p>
+    </footer>
+
+</body>
+<script src="./script/wishlist.js"></script>
+</html>

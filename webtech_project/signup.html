@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            /* background-color: whitesmoke ; */
+        }
+        body{
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrmR4A0anmOLG9EGBWgvo8fIATpEFrY1qXzg&s');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            image-rendering: crisp-edges;
+        }
+        #form{
+          display: inline;
+           
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10pc 10pc ;
+            
+            
+        }
+        .container{
+            height: 79vh;
+            width: 390px;
+            background-color: rgb(252, 251, 251);
+            border-radius: 20px;
+            margin-right: 8px;
+            padding-top: 20px;
+            box-shadow: 0 0 10px 10px rgb(170, 104, 104);
+            
+        }
+        #fieldset{
+            border: none;
+            background-color: white;
+
+        }
+         .login{
+            font-size: x-large ;
+            text-align: center;
+            padding: 10px;
+            color: rgb(223, 44, 133);
+            background-color: white;
+        }
+        .design{
+            font-size: 25px ;
+            padding: 10px 5%;
+            margin-top: 40px;
+            background-color: white;
+            color: rgb(0, 60, 255);
+        }
+        input{
+             height: 25px;
+            border: 1.5px solid  rgb(0, 60, 255);
+            border-radius: 8px;
+            background-color: white;
+            padding-right: 15px;
+        }
+        .age{
+              width: 50px;
+              height: 25px;
+              padding: 2px;
+        }
+        p{
+            text-align: left;
+            background-color: white;
+            padding: 0 15px;
+        }
+        button{
+            height: 30px;
+            width: 100px;
+            border-radius: 20px;
+            margin-left: 45px;
+            background-color: rgb(23, 223, 223);
+            font-size: 17px;
+            color: rgb(247, 5, 126);
+        }
+        button:hover{
+            transform: scale(1.05);
+            color: green;
+        }
+        </style>
+</head>
+<body>
+  
+   <form id="form" >
+    <section class="container">
+    <fieldset id="fieldset">
+           <legend class="login"><b><u>Sign in</u></b></legend>
+           <br>
+           <label for="username" class="design">User Name : </label>
+           <input type="text" id="username" name=" username" placeholder="Enter username">
+           <br><br>
+           <label for="Phone_no" class="design">Phone No : </label>
+           <input type="tel" name="Phone_no" id="Phone_no" placeholder="Enter Phone no" maxlength="10">
+           <br><br>
+           <label for="password" class="design">Password : </label>
+           <input type="password" id="password" name="password" placeholder="Enter password">
+           <br><br>
+           <label for="age" class="design">Age : </label>
+           <input type="number" id="age" class="age" name="age" max="85">
+           <br><br>
+           <label for="email" class="design">Email : </label>
+           <input type="email" id="email" name="email" placeholder="Enter email">
+           <br><br>
+           <label for="dob" class="design">DOB : </label>
+           <input type="date" id="dob" name="dob">
+           <br><br>
+           <label for="imageurl" class="design">Image Url : </label>
+           <input type="url" id="imageurl" placeholder="Enter Image Url" name="imageurl">
+           <br><br><br>
+
+
+           <p>People who use our service may have uploaded your contact information to Electronics.</p>
+
+           <br><br>
+
+           <p>By tapping Submit, you agree to create an account and to Electronics  <span style="color: rgb(0, 81, 255)"><b>Terms of Use</b> </span>and <span style="color: rgb(0, 81, 255);"> <b>Privacy Policy.</b></span></p>
+
+           <br><br>
+
+           <p>The <span style="color: rgb(0, 81, 255)"> <b>Privacy Policy</b></span> describes the ways we can use the information we collect when you create an account. For example, we use this information to provide, personalize and improve our products.</p>
+           <br><br>
+
+           <button>Submit</button>
+           <button>Reset</button>
+    </fieldset>
+    </section>
+   </form>
+</body>
+<script src="./script/signup.js"></script>
+</html>

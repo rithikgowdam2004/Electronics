@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+}
+body{
+    background-color: beige;
+}
+.navbarContrainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(51, 162, 177, 0.849);
+    color: white;
+    height: 50px;
+    
+}
+.logo{
+    width: 10%;
+    padding: 12px;
+    font-size: 28px;
+    color: rgb(124, 247, 140);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.logo img{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+.manu-items {
+    
+    display: flex;
+    align-items: center;
+    gap: 75px;
+    justify-content: space-around;
+
+}
+.manu-items a{
+    color: rgb(124, 247, 140);
+    text-decoration: none;
+    font-size: 20px;
+
+}
+.manu-items a:hover{
+    color:  aliceblue;
+}
+.dropdown-content{
+    display: flex;
+    gap: 75px;
+    align-items: center;
+    justify-content: center;
+
+}
+#search{
+    border-radius: 10px;
+    width: 250px;
+    border: none;
+    height: 12px;
+    padding: 15px;
+}
+.nav-rigth{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 25px;
+    font-size: 20px;
+}
+.nav-rigth a{
+    text-decoration: none;
+    color: rgb(124, 247, 140);
+}
+.nav-rigth a:hover{
+    color: aliceblue;
+}
+.nav-rigth img{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+.firstContrainer{
+    padding: 40px ;
+    background-color: rgb(219, 170, 106);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(248, 251, 253);
+}
+
+.container-content h1{
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+
+.container-content p{
+    margin-bottom: 15px;
+    font-size: 35px;
+}
+
+.container-content button{
+    padding: 10px 20px;
+    color: rgba(131, 32, 245, 0.795);
+    border: none;
+    border-radius: 10px;
+    
+    font-size: 17px;
+    background-color: rgba(248, 252, 250, 0.952);
+}
+
+
+/* 2nd container */
+.category{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.category .cat{
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 0 0 5px gray;
+    
+}
+.category .cat:hover{
+    transform: scale(1.1);
+}
+
+
+/* 3rd container */
+.features{
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: whitesmoke;
+    box-shadow: 0  0 5px gray;
+    border-radius: 20px;
+}
+
+.features aside:hover {
+    transform: scale(1.1);
+}
+
+#productList{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 30px;
+}
+
+#productList .Product-card{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    max-height: 400px;
+    background-color: whitesmoke;
+    box-shadow: 0 0 5px gray;
+    border-radius: 20px;
+}
+
+.Product-card img{
+    height: 150px;
+    width: 200px;
+    border-radius: 20px;
+}
+
+    .Product-card button {
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(134, 228, 245, 0.822);
+    color: rgb(53, 19, 206);
+   }
+    .Product-card :no-button:first-of-type{
+        background-color: skyblue;
+    }
+     .Product-card :no-button:last-of-type{
+        background-color: skyblue;
+    }
+    .product-card button:hover{
+    transform: scale(1.1);
+     } 
+    .Product-card:hover{
+        transform: scale(1.05);
+    }
+    .Product-card p{
+    font-size: 20px;
+    }
+
+     .cartSummary {
+       padding: 50px;
+        text-align: center;
+        background-color: bisque;
+        
+        
+     }
+     .cartSummary button{
+        padding: 5px 10px;
+        border-radius: 10px;
+        border: none;
+        background-color: rgba(177, 107, 241, 0.705);
+        margin-left: 10px;
+        font-size: large;
+        color: rgb(8, 4, 247)
+     }
+     .cartSummary #total{
+        color: rgb(228, 39, 39);
+        font-family: 'Times New Roman', Times, serif;
+        font-size: x-large;
+     }
+     .cartSummary button:hover{
+        transform: scale(1.1);
+        color: white;
+     }
+
+     .footer {
+    background-color: rgb(8, 4, 247);
+    color: rgb(187, 255, 0);
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+
